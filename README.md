@@ -6,7 +6,7 @@ Notice that when you click on the Detail tab, the images in the carousel are mis
 
 Also, if you go into `App.js` and pull the 2 `<Scene>`s out of the `<Tabs>` component, and nest them directly in the `<Stack>`, the bug doesn't happen anymore:
 
-```
+```jsx
 <Router>
     <Stack key="root">
         <Scene initial key="Home" component={Home}/>
@@ -17,7 +17,7 @@ Also, if you go into `App.js` and pull the 2 `<Scene>`s out of the `<Tabs>` comp
 
 Another thing that solves it is if you set the `Detail` scene as the initial one (even with the `<Tabs>`).
 
-```
+```jsx
 <Router>
 <Stack key="root">
     <Tabs
